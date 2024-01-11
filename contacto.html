@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Tarea1/imagenes/favicon.jpg" type="image/x-icon">
+    <style>
+        #formularioM {
+            display: none;
+            /*Ocultar*/
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #informacionM {
+            display: none;
+            /*Ocultar*/
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .formulario {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(0deg, var(--ccfondoform)0%);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Para agrandar la letra */
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Cambia el boton*/
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: pink;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* seudo elemento */
+        :root {
+            --cfondo: rgb(207, 211, 2012);
+            --ccfondoform: rgb(1, 45, 34);
+        }
+
+        .accept {
+            display: flex;
+            align-items: center;
+        }
+
+        .contactoM{
+            background-color: rgba(255, 182, 193, 0.5);
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1 class="h11"><button class="boton1"><a href="./index.html"><i class="fa-solid fa-house"
+                            style="color: palevioletred;"></i> INICIO </a></button>MAGIC BEAUTY <button
+                    class="boton2"><a href="./servicios.html"><i class="fa-solid fa-list"
+                            style="color: palevioletred"></i> PRODUCTOS</a></button></h1>
+            <h2 class="h22">Bienvenida al lugar de tus sueños</h2>
+            <div class="icon">
+                <img src="../Tarea1/imagenes/favicon.jpg" width="100" height="100">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./acercaDe.html"><i class="fa-solid fa-circle-info"
+                                style="color:  palevioletred;"></i>ACERCA DE</a></li>
+                    <li><a href="./servicios.html"><i class="fa-solid fa-heart"
+                                style="color:  palevioletred;"></i>SERVICIOS</a></li>
+                    <li><a href="./sucursal.html"><i class="fa-solid fa-location-dot"
+                                style="color: palevioletred;"></i>SUCURSAL</a></li>
+                    <li><a href="./contacto.html"><i class="fa-solid fa-phone"
+                                style="color:  palevioletred"></i>CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <section>
+        <div class="container">
+            <h1>Contacto</h1>
+        </div>
+    </section>
+    <section>
+        <main>
+            <div class="formulario">
+                <h3>Formulario de contacto <button id="botonmas" onclick="mostrar();"><i class="fa-solid fa-plus"
+                            style="color: palevioletred;"></i></button> </h3>
+                <div id="formularioM">
+                    <div>
+                        <label for="name"> Nombre: </label>
+                        <br>
+                        <input type="text" id="name" name="name">
+                        <br>
+                    </div>
+                    <div>
+                        <label for="subname"> Apellido: </label>
+                        <br>
+                        <input type="text" id="subname" name="subname">
+                        <br>
+                    </div>
+                    <div>
+                        <label for="email"> Correo Electronico </label>
+                        <br>
+                        <input type="text" id="email" name="email">
+                        <br>
+                    </div>
+                    <div>
+                        <label for="number"> Celular </label>
+                        <br>
+                        <input type="text" id="number" name="number">
+                        <br>
+                    </div>
+                    <div>
+                        <label for="Contraseña">Contraseña</label>
+                        <br>
+                        <input type="password" id="Contraseña" placeholder="Contraseña " minlength="4" maxlength="15"
+                            required>
+                        <br>
+                    </div>
+                    <div>
+                        <label for="repeatPassword"> Repetir Contraseña: </label>
+                        <br>
+                        <input type="password" id="password" name="repeatPassword" placeholder="Contraseña "
+                            minlength="4" maxlength="15" required>
+                        <br>
+                    </div>
+
+                    <div class="accept">
+                        <h3>Aceptar <a
+                                href="https://www.securityartwork.es/2013/06/11/he-leido-y-acepto-los-terminos-y-condiciones-de-uso/"
+                                target="_blank" style="color: black;">Terminos y Condiciones</a></h3>
+                        <br>
+                        <div>
+                            <label>
+                                <br>
+                                <input class="inputAccept" type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                    <br>
+                    <button id="botonmenos" onclick="ocultar();">Ver menos <i class="fa-solid fa-minus"
+                            style="color: palevioletred;"></i></button>
+                </div>
+            </div>
+            <div class="informacion">
+                <h3>Informacion de contacto <button id="botonmas" onclick="mostrar2();"><i class="fa-solid fa-plus"
+                            style="color: palevioletred;"></i></button></h3>
+                <div id="informacionM">
+                    <h4>Te dejamos aquí nuestros contactos <br> Para atención personalizada <i class="fa-solid fa-heart"
+                            style="color: palevioletred;"></i></h4>
+                    <div class="contactoM">
+                        <ul>
+                            <li>Email
+                                <ul>
+                                    <li><br><i class="fa-solid fa-envelope" style="color: black"></i> rivera.stephi11@gmail.com   </li>
+                                    <li><br><i class="fa-solid fa-envelope" style="color: black"></i> pablo_lopez2004@gmail.com   </li>
+                                </ul>
+                            </li>
+                            <li>
+                               Celular
+                               <ul>
+                                <li><i class="fa-solid fa-phone" style="color: black;"></i> Stephani Rivera <br><br> 0998765122 </li>
+                                <br>
+                                <li><i class="fa-solid fa-phone" style="color: black;"></i> Pablo Lopez <br><br> 0993375890 </li>
+                                <br> 
+                               </ul>
+                            </li>
+                            <li>
+                                Dirección Local Principal
+                                <ul>
+                                    <li><br><i class="fa-solid fa-thumbtack" style="color: black;"></i>Jaime Roldos Aguilera & Giovanni Calles</li>
+                                </ul>
+                            </li>
+                        </ul> 
+                    </div>
+                    <br>
+                    <button id="botonmenos" onclick="ocultar2();">Ver menos <i class="fa-solid fa-minus"
+                            style="color: palevioletred;"></i></button>
+                </div>
+            </div>
+            <script>
+                function mostrar() {
+                    document.getElementById('formularioM').style.display = 'block';
+                }
+                function ocultar() {
+                    document.getElementById('formularioM').style.display = 'none';
+                }
+                function mostrar2() {
+                    document.getElementById('informacionM').style.display = 'block';
+                }
+                function ocultar2() {
+                    document.getElementById('informacionM').style.display = 'none';
+                }
+            </script>
+        </main>
+    </section>
+    <footer>
+        <section>
+            <h2>Siguenos en Redes Sociales</h2>
+            <div class="imgg">
+            <a href="https://www.instagram.com/stephi.rivera/" target="_blank"><img src="../Tarea1/imagenes/insta.jpg"
+                    height="100" width="100"><h4>INSTAGRAM</h4></a>
+                <a href="https://www.facebook.com/stefyyyyyyyyiiii" target="_blank"><img
+                        src="../Tarea1/imagenes/face.jpg" height="100" width="100"><h4>FACEBOOK</h4></a>
+            </div>
+            <br>
+            <div class="piePagina"><i class="fa-solid fa-copyright" style="color:black;"></i>Copy Right</div>
+        </section>
+    </footer>
+</body>
+</html>

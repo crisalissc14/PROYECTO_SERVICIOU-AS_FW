@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca De</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Tarea1/imagenes/favicon.jpg" type="image/x-icon">
+    <style>
+        #misionM {
+            display: none;
+            /*Ocultar*/
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #visionM {
+            display: none;
+            /*Ocultar*/
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #historiaM {
+            display: none;
+            /*Ocultar*/
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #recursosM {
+            display: none;
+            /*Ocultar*/
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #preciosM{
+            display: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .emoji1,
+        .emoji2,
+        .emoji3,
+        .emoji4 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            width: 800px;
+            margin: 100px auto;
+        }
+
+        td,
+        th {
+            border: solid 1px #ccc;
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ddd;
+        }
+
+        td:nth-child(3),
+        th:nth-child(3) {
+            text-align: right;
+        }
+
+        td:nth-child(4),
+        th:nth-child(4) {
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: rgb(213, 125, 156) !important;
+        }
+
+        thead {
+            background-color: rgb(233, 193, 207);
+            color: black;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1 class="h11"><button class="boton1"><a href="./index.html"><i class="fa-solid fa-house"
+                            style="color: palevioletred;"></i> INICIO </a></button>MAGIC BEAUTY <button
+                    class="boton2"><a href="./servicios.html"><i class="fa-solid fa-list"
+                            style="color: palevioletred"></i> PRODUCTOS</a></button></h1>
+            <h2 class="h22">Bienvenida al lugar de tus sueños</h2>
+            <div class="icon">
+                <img src="../Tarea1/imagenes/favicon.jpg" width="100" height="100">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./acercaDe.html"><i class="fa-solid fa-circle-info"
+                                style="color:  palevioletred;"></i>ACERCA DE</a></li>
+                    <li><a href="./servicios.html"><i class="fa-solid fa-heart"
+                                style="color:  palevioletred;"></i>SERVICIOS</a></li>
+                    <li><a href="./sucursal.html"><i class="fa-solid fa-location-dot"
+                                style="color: palevioletred;"></i>SUCURSAL</a></li>
+                    <li><a href="./contacto.html"><i class="fa-solid fa-phone"
+                                style="color:  palevioletred;"></i>CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <section>
+            <div class="mision">
+                <h3>Misión <button id="botonmas" onclick="mostrar();"><i class="fa-solid fa-plus"
+                            style="color: palevioletred;"></i></button></h3>
+                <div id="misionM">
+                    <p>Embellecer y resaltar la belleza única de cada cliente, brindando servicios de alta calidad en un
+                        ambiente acogedor y profesional. Nos esforzamos por superar las expectativas, ofreciendo
+                        servicios personalizados que
+                        resalten la individualidad y realcen la confianza de nuestros clientes. Estamos comprometidos
+                        con la innovación, la excelencia y la satisfacción del cliente, creando experiencias memorables
+                        que perduran más allá de
+                        cada visita. </p>
+                    <div class="emoji1">
+                        <img src="./imagenes/abrazo.jpg" height="100" width="100">
+                    </div>
+                    <br>
+                    <button id="botonmenos" onclick="ocultar();">Ver menos <i class="fa-solid fa-minus"
+                            style="color: palevioletred;"></i></button>
+                </div>
+            </div>
+            <div class="vision">
+                <h3>Visión <button id="botonmas" onclick="mostrar2();"><i class="fa-solid fa-plus"
+                            style="color: palevioletred;"></i></button></h3>
+                <div id="visionM">
+                    <p>Ser reconocidos como el salón de belleza líder en el sector, destacando por nuestra excelencia en
+                        servicios, la creatividad de nuestro equipo y
+                        la atención personalizada a cada cliente. Buscamos ser un referente en tendencias de belleza,
+                        incorporando constantemente nuevas técnicas y productos de vanguardia. Nuestra visión es crear
+                        un espacio donde la belleza
+                        se fusiona con la confianza y la autenticidad, generando un impacto positivo en la autoestima y
+                        bienestar de quienes confían en nosotros. </p>
+                    <div class="emoji2">
+                        <img src="./imagenes/corazon.jpg" height="100" width="100">
+                    </div>
+                    <br>
+                    <button id="botonmenos" onclick="ocultar2();">Ver menos <i class="fa-solid fa-minus"
+                            style="color: palevioletred;"></i></button>
+                </div>
+            </div>
+            <div class="historia">
+                <h3>Historia de la Empresa <button id="botonmas" onclick="mostrar3();"><i class="fa-solid fa-plus"
+                            style="color: palevioletred;"></i></button></h3>
+                <div id="historiaM">
+                    <p>Había una vez en el año 2015, en el corazón de una bulliciosa ciudad, un grupo de apasionados
+                        profesionales de la belleza que decidieron unir fuerzas y dar vida a un sueño compartido. Así
+                        nació "Magic Beauty", un salón de belleza que buscaba transformar la experiencia tradicional de
+                        cuidado personal en algo único y excepcional.
+                        <br>
+                        Los fundadores, <b>Stephani y Andres </b>, ambos expertos en el mundo de la estética y la
+                        peluquería, compartían una visión clara: crear un espacio donde la belleza se convirtiera en una
+                        expresión auténtica de cada individuo. Juntos, trajeron consigo años de experiencia y un
+                        entusiasmo contagioso por innovar en la industria de la belleza.
+                        <br>
+                        Al principio, "Magic Beauty" comenzó en un modesto local, pero la dedicación y el compromiso de
+                        su equipo rápidamente captaron la atención de la comunidad local. El salón se ganó una
+                        reputación por sus servicios personalizados y la habilidad de su talentoso equipo para adaptarse
+                        a las últimas tendencias.
+
+                        Con el tiempo, la demanda creció y "Magic Beauty" se expandió, ofreciendo una gama más amplia de
+                        servicios, desde cortes de cabello y coloración hasta tratamientos de spa y cuidado de la piel.
+                        La atención al cliente y la calidad de los productos utilizados se convirtieron en sellos
+                        distintivos de la marca.
+
+                        A medida que avanzaban los años, el salón no solo se consolidó como un referente de belleza en
+                        la ciudad, sino que también se convirtió en un espacio comunitario donde las personas no solo
+                        venían a mejorar su apariencia, sino también a compartir experiencias y celebrar la diversidad
+                        de la belleza.
+                    </p>
+                    <div class="emoji3">
+                        <img src="./imagenes/favicon.jpg" height="200" width="200">
+                    </div>
+                    <br>
+                    <button id="botonmenos" onclick="ocultar3();">Ver menos <i class="fa-solid fa-minus"
+                            style="color: palevioletred;"></i></button>
+                </div>
+            </div>
+            <div class="recursos">
+                <h3>Recursos Multimedia <button id="botonmas" onclick="mostrar4();"><i class="fa-solid fa-plus"
+                            style="color: palevioletred;"></i></button></h3>
+                <div id="recursosM">
+                    <div class="emoji4">
+                        <img src="./imagenes/recursos.jpg" height="400" width="400">
+                    </div>
+                    <br>
+                    <button id="botonmenos" onclick="ocultar4();">Ver menos <i class="fa-solid fa-minus"
+                            style="color: palevioletred;"></i></button>
+                </div>
+            </div>
+            <div class="precios">
+                <h3>Tabla de precios<button id="botonmas" onclick="mostrar5();"><i class="fa-solid fa-plus"
+                        style="color: palevioletred;"></i></button></h3>
+                <div id="preciosM">
+                    <table>
+                        <caption>
+                            Tabla de precios
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Servicio</th>
+                                <th>Codigo</th>
+                                <th>Tamaño</th>
+                                <th>Precio Normal</th>
+                                <th>Precio Afiliados</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Tinte sin decoloración</td>
+                                <td>1234</td>
+                                <td>Corto</td>
+                                <td>$25</td>
+                                <td>$20</td>
+                            </tr>
+                            <tr>
+                                <td>Tinte sin decoloración</td>
+                                <td>1235</td>
+                                <td>Medio</td>
+                                <td>$35</td>
+                                <td>$30</td>
+                            </tr>
+                            <tr>
+                                <td>Tinte sin decoloración</td>
+                                <td>1234</td>
+                                <td>Largo</td>
+                                <td>$45</td>
+                                <td>$40</td>
+                            </tr>
+                            <tr>
+                                <td>Tinte con decoloración</td>
+                                <td>2345</td>
+                                <td>Medio</td>
+                                <td>$65</td>
+                                <td>$60</td>
+                            </tr>
+                            <tr>
+                                <td>Tinte con decoloración</td>
+                                <td>2346</td>
+                                <td>Largo</td>
+                                <td>$80</td>
+                                <td>$75</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>asdasdas</th>
+                                <th>asdasdas</th>
+                                <th>asdasdas</th>
+                                <th>asdasdas</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button id="botonmenos" onclick="ocultar5();">Ver menos <i class="fa-solid fa-minus"
+                        style="color: palevioletred;"></i></button>
+                </div>
+            </div>
+            <script>
+                function mostrar() {
+                    document.getElementById('misionM').style.display = 'block';
+                }
+                function ocultar() {
+                    document.getElementById('misionM').style.display = 'none';
+                }
+                function mostrar2() {
+                    document.getElementById('visionM').style.display = 'block';
+                }
+                function ocultar2() {
+                    document.getElementById('visionM').style.display = 'none';
+                }
+                function mostrar3() {
+                    document.getElementById('historiaM').style.display = 'block';
+                }
+                function ocultar3() {
+                    document.getElementById('historiaM').style.display = 'none';
+                }
+                function mostrar4() {
+                    document.getElementById('recursosM').style.display = 'block';
+                }
+                function ocultar4() {
+                    document.getElementById('recursosM').style.display = 'none';
+                }
+                function mostrar5() {
+                    document.getElementById('preciosM').style.display = 'block';
+                }
+                function ocultar5() {
+                    document.getElementById('preciosM').style.display = 'none';
+                }
+            </script>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h2>Siguenos en Redes Sociales</h2>
+            <div class="imgg">
+                <a href="https://www.instagram.com/stephi.rivera/" target="_blank"><img
+                        src="../Tarea1/imagenes/insta.jpg" height="100" width="100">
+                    <h4>INSTAGRAM</h4>
+                </a>
+                <a href="https://www.facebook.com/stefyyyyyyyyiiii" target="_blank"><img
+                        src="../Tarea1/imagenes/face.jpg" height="100" width="100">
+                    <h4>FACEBOOK</h4>
+                </a>
+            </div>
+            <br>
+            <div class="piePagina"><i class="fa-solid fa-copyright" style="color:black;"></i>Copy Right</div>
+        </section>
+    </footer>
+</body>
+
+</html>

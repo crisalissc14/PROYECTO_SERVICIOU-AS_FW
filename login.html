@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notificación</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="login-container">
+        <h2 style="font-family: 'Times New Roman', Times, serif;">MAGIC BEAUTY</h2>
+        <p style="font-family: 'Times New Roman', Times, serif;">Bienvenida al lugar de tus sueños</p>
+
+        <form id="loginForm" onsubmit="validateForm(event)">
+          <p>
+            <label for="username" style="font-family: 'Times New Roman', Times, serif;">Usuario</label>
+            <input class="input" type="text" name="username" />
+          </p>
+
+          <p>
+            <label for="password" style="font-family: 'Times New Roman', Times, serif;">Contraseña</label>
+            <input class="input" type="password" name="password" />
+          </p>
+
+          <div class="options">
+            <div style="font-family: 'Times New Roman', Times, serif;">
+              Recordarme <input type="checkbox" name="remeberme" id="" />
+            </div>
+            <div>
+              <a style="font-family: 'Times New Roman', Times, serif;" href="#">Olvide mi contraseña</a>
+            </div>
+          </div>
+
+          <p>
+            <input class="btn btn-login" type="submit" value="Iniciar sesión" />
+          </p>
+          <div class="providers">
+            <span style="font-family: 'Times New Roman', Times, serif;">Registrarse con</span>
+            <button style="font-family: 'Times New Roman', Times, serif;" class="btn google-provider"><img src="../Tarea1/imagen login/google.jpg" height="20" width="20">Google</button>
+            <button style="font-family: 'Times New Roman', Times, serif;" class="btn facebook-provider"><img src="../Tarea1/imagen login/facebook22.jpg" height="20" width="20">Facebook</button>
+            <button style="font-family: 'Times New Roman', Times, serif;" class="btn twitter-provider"><img src="../Tarea1/imagen login/x.jpg" height="20" width="20">Twitter</button>
+          </div>
+        </form>
+      </div>
+      <div class="welcome-screen-container">
+        <img src="../Tarea1/imagen login/3.jpg" height="700" width="600"> 
+      </div>
+      <script>
+        function validateForm(event) {
+          event.preventDefault();
+  
+          // Obtener valores del formulario
+          var username = document.forms["loginForm"]["username"].value;
+          var password = document.forms["loginForm"]["password"].value;
+  
+          // Validar usuario y contraseña
+          if (username === "Admin" && password === "12345") {
+            // Redirigir a otra página si la validación es exitosa
+            window.location.href = "index.html";
+          } else {
+            // Mostrar mensaje de error
+            alert("Usuario o contraseña incorrecto");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

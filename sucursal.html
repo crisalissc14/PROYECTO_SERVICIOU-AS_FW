@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Tarea1/imagenes/favicon.jpg" type="image/x-icon">
+    
+    <style>
+        h3 {
+            text-align: center;
+            background: linear-gradient(to Right, #FFB6C1, #FFFFFF);
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .iframe1 {
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .ubicacionM {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            /* Puedes ajustar la altura según tus necesidades */
+        }
+        .ubicacion2, 
+        .ubicacion3{
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+        }
+        .sucursalSur, 
+        .sucursalGye{
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1 class="h11"><button class="boton1"><a href="./index.html"><i class="fa-solid fa-house"
+                            style="color: palevioletred;"></i> INICIO </a></button>MAGIC BEAUTY <button
+                    class="boton2"><a href="./servicios.html"><i class="fa-solid fa-list"
+                            style="color: palevioletred"></i> PRODUCTOS</a></button></h1>
+            <h2 class="h22">Bienvenida al lugar de tus sueños</h2>
+            <div class="icon">
+                <img src="../Tarea1/imagenes/favicon.jpg" width="100" height="100">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./acercaDe.html"><i class="fa-solid fa-circle-info"
+                                style="color:  palevioletred;"></i>ACERCA DE</a></li>
+                    <li><a href="./servicios.html"><i class="fa-solid fa-heart"
+                                style="color:  palevioletred;"></i>SERVICIOS</a></li>
+                    <li><a href="./sucursal.html"><i class="fa-solid fa-location-dot"
+                                style="color: palevioletred;"></i>SUCURSAL</a></li>
+                    <li><a href="./contacto.html"><i class="fa-solid fa-phone"
+                                style="color:  palevioletred"></i>CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <section>
+            <section>
+            <h4>¡PRÓXIMA SUCURSAL MUY PRONTO!</h4>
+            <h3>Cada día estamos trabajando por un mejor servicio cerca de tí. :) </h3>
+            <div class="progressbar-container">
+                <div class="outer-box">
+                    <div class="inner-box" id="progressValue">0%</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#fde0e0" />
+                                <stop offset="50%" stop-color="#f48fb1" />
+                                <stop offset="100%" stop-color="#e91e63" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="100" cy="100" r="80" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </section>
+            <h3>Ubicación de la matriz <i class="fa-solid fa-location-dot" style="color: red;"></i></h3>
+            <h4><i class="fa-solid fa-thumbtack" style="color: red;"></i> Jaime Roldos Aguilera, Quito 170203</h4>
+            <div class="ubicacionM">
+                <iframe class="iframe1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.453065003623!2d-78.45056673046236!3d-0.0998640588905938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f128b9e43b5%3A0xa95847372f9ff7a6!2sJaime%20Roldos%20Aguilera%2C%20Quito%20170203!5e0!3m2!1ses!2sec!4v1701023350895!5m2!1ses!2sec"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h3>Ubicacion de las Sucursales <i class="fa-solid fa-location-dot" style="color: red;"></i></h3>
+            <h4>SUCURSALES EN EL SUR DE QUITO</h4>
+            <div class="ubicacion2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.8897829213583!2d-78.5230169183654!3d-0.2525355324350651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59900bf9c20e1%3A0x798e1c28123c880f!2sAv.%20Pedro%20Vicente%20Maldonado%2C%20Quito%20170111!5e0!3m2!1ses!2sec!4v1701024045577!5m2!1ses!2sec"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.8857885400403!2d-78.54269335115585!3d-0.2773454257030648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d598950a3e65e3%3A0xe4ba7a8af319a3b4!2sCusubamba%2C%20Quito%20170131!5e0!3m2!1ses!2sec!4v1701024351797!5m2!1ses!2sec"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="sucursalSur">
+                <h5><i class="fa-solid fa-thumbtack" style="color: red;"></i> Av. Pedro Vicente Maldonado, Quito 170111</h5>
+                <h5><i class="fa-solid fa-thumbtack" style="color: red;"></i> Cusubamba, Quito 170131</h5>
+            </div>
+            <h4>SUCURSALES EN GUAYAQUIL</h4>
+            <div class="ubicacion3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.1203978160283!2d-79.90295442542394!3d-2.107173437073454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d12b426265aef%3A0xe4e83409ff7c5ccd!2sTeodoro%20Alvarado%20Oleas%2C%20Guayaquil%20090112!5e0!3m2!1ses!2sec!4v1701025123672!5m2!1ses!2sec" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="sucursalGye">
+                <h5><i class="fa-solid fa-thumbtack" style="color: red;"></i> Teodoro Alvarado Oleas, Guayaquil 090112 (Frente al parque Samanes)</h5>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <section>
+            <h2>Siguenos en Redes Sociales</h2>
+            <div class="imgg">
+                <a href="https://www.instagram.com/stephi.rivera/" target="_blank"><img
+                        src="../Tarea1/imagenes/insta.jpg" height="100" width="100">
+                    <h4>INSTAGRAM</h4>
+                </a>
+                <a href="https://www.facebook.com/stefyyyyyyyyiiii" target="_blank"><img
+                        src="../Tarea1/imagenes/face.jpg" height="100" width="100">
+                    <h4>FACEBOOK</h4>
+                </a>
+            </div>
+            <br>
+            <div class="piePagina"><i class="fa-solid fa-copyright" style="color:black;"></i>Copy Right</div>
+        </section>
+    </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const progressValue = document.getElementById('progressValue');
+        let percent = 0;
+
+        const intervalId = setInterval(() => {
+            percent += 5;
+            if (percent <= 80) {
+                progressValue.textContent = `${percent}%`;
+            } else {
+                clearInterval(intervalId);
+            }
+        }, 500);
+    });
+</script>
+
+</html>

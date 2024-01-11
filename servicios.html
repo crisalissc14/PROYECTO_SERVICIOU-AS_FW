@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Tarea1/imagenes/favicon.jpg" type="image/x-icon">
+    
+</head>
+<body>
+    <section>
+        <header>
+            <h1 class="h11"><button class="boton1"><a href="./index.html"><i class="fa-solid fa-house" style="color: palevioletred;"></i>  INICIO  </a></button>MAGIC BEAUTY <button class="boton2"><a href="./servicios.html"><i class="fa-solid fa-list" style="color: palevioletred"></i> PRODUCTOS</a></button></h1>
+            <h2 class="h22">Bienvenida al lugar de tus sueños</h2>
+            <div class="icon">
+                <img src="../Tarea1/imagenes/favicon.jpg" width="100" height="100" >
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./acercaDe.html"><i class="fa-solid fa-circle-info" style="color:  palevioletred;"></i>ACERCA DE</a></li>
+                    <li><a href="./servicios.html"><i class="fa-solid fa-heart" style="color:  palevioletred;"></i>SERVICIOS</a></li>
+                    <li><a href="./sucursal.html"><i class="fa-solid fa-location-dot" style="color: palevioletred;"></i>SUCURSAL</a></li>
+                    <li><a href="./contacto.html"><i class="fa-solid fa-phone" style="color:  palevioletred"></i>CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <section>
+            <h3>Servicios</h3>
+            <div class="search-container">
+                <input type="text" id="inputSearch" placeholder="Buscar...">
+                <button onclick="buscador_interno()"><i class="fa-solid fa-magnifying-glass" style="color: #fcfcfd;"></i></button>
+            </div>
+        </section>
+        <section>
+            <h3>Tintes</h3>
+            <!-- Convertir imágenes en tarjetas de volteo -->
+        <div class="wrapper">
+            <!-- Primera fila -->
+            <div class="single-card" onclick="flipCard(this)">
+                <div class="front">
+                    <h2>Rojo Intenso</h2>
+                    <img src="./imagenes/rojo1.jpg" height="150" width="110">
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h2>Tintes - Detalles</h2>
+                        <p>Eleva tu estilo con nuestro tinte rojo intenso. Atrévete a destacar y deja que tu cabello hable por sí mismo.</p>
+                        <button onclick="mostrar();">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite para otras imágenes de Rojos... -->
+            <div class="single-card" onclick="flipCard(this)">
+                <div class="front">
+                    <h2>Carmín Radiante</h2>
+                    <img src="./imagenes/rojo2.jpg" height="150" width="110">
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h2>Tintes - Detalles</h2>
+                        <p>Transforma tu apariencia con nuestro tinte carmín radiante. Un tono vibrante que ilumina tu cabello con un toque de fuego.</p>
+                        <button onclick="mostrar();">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite para otras imágenes de Rojos... -->
+            <div class="single-card" onclick="flipCard(this)">
+                <div class="front">
+                    <h2>Rojo Cereza Elegante</h2>
+                    <img src="./imagenes/rojo3.jpg" height="150" width="110">
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h2>Tintes - Detalles</h2>
+                        <p>Descubre la elegancia del rojo cereza en tu cabello. Un tono seductor que añade un toque de misterio a tu look.</p>
+                        <button onclick="mostrar();">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite para otras imágenes de Rojos... -->
+            <div class="single-card" onclick="flipCard(this)">
+                <div class="front">
+                    <h2>Rojo Cobrizo Brillante</h2>
+                    <img src="./imagenes/rojo4.jpg" height="150" width="110">
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h2>Tintes - Detalles</h2>
+                        <p>Dale vida a tu cabello con nuestro tinte rojo cobrizo brillante. Un color que refleja la luz y resalta tu belleza natural.</p>
+                        <button onclick="mostrar();">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite para otras imágenes de Rojos... -->
+            <div class="single-card" onclick="flipCard(this)">
+                <div class="front">
+                    <h2>Borgoña Profundo</h2>
+                    <img src="https://i.pinimg.com/736x/ed/fd/87/edfd87d46d1b7575f78c12b951e702cf.jpg" height="150"
+                        width="110">
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h2>Tintes - Detalles</h2>
+                        <p>Sumérgete en la profundidad del color borgoña. Un tono rojo oscuro que agrega un toque de misterio y sofisticación.                        </p>
+                        <button onclick="mostrar();">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda fila - Rubios -->
+            
+            <div class="single-card" onclick="flipCard(this)">
+                <div class="front">
+                    <h2>Rubio Dorado Luminoso</h2>
+                    <img src="https://i.pinimg.com/564x/c5/59/6e/c5596e415de12ba305a50ad5f3919ab7.jpg" height="150"
+                        width="110">
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h2>Tintes - Detalles</h2>
+                        <p>Descripción detallada de los tintes ofrecidos.</p>
+                        <button onclick="mostrar();">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite para otras imágenes de Rubios... -->
+            <div class="single-card" onclick="flipCard(this)">
+                <div class="front">
+                    <h2>Platino Elegante</h2>
+                    <img src="https://i.pinimg.com/564x/a3/bb/0e/a3bb0edd63aafdf784b3c67370580ffa.jpg" height="150"
+                        width="110">
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h2>Tintes - Detalles</h2>
+                        <p>Descripción detallada de los tintes ofrecidos.</p>
+                        <button onclick="mostrar();">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite para otras imágenes de Rubios... -->
+            <div class="single-card" onclick="flipCard(this)">
+                <div class="front">
+                    <h2>Rubio Ceniza</h2>
+                    <img src="https://i.pinimg.com/736x/5c/b3/b2/5cb3b2433eeeea9e7de2129372afa54a.jpg" height="150"
+                        width="110">
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h2>Tintes - Detalles</h2>
+                        <p>Descripción detallada de los tintes ofrecidos.</p>
+                        <button onclick="mostrar();">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite para otras imágenes de Rubios... -->
+            <div class="single-card" onclick="flipCard(this)">
+                <div class="front">
+                    <h2>Rubio Miel Dulce</h2>
+                    <img src="https://i.pinimg.com/564x/2e/ae/4f/2eae4f881e5bc24f63c59a0134e74c7e.jpg" height="150" width="110">
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h2>Tintes - Detalles</h2>
+                        <p>Descripción detallada de los tintes ofrecidos.</p>
+                        <button onclick="mostrar();">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite para otras imágenes de Rubios... -->
+            <div class="single-card" onclick="flipCard(this)">
+                <div class="front">
+                    <h2>Avellana Radiante</h2>
+                    <img src="https://i.pinimg.com/564x/9a/e7/4c/9ae74c68430f7b09c371c54f890976f0.jpg" height="150" width="110">
+                </div>
+                <div class="back">
+                    <div class="content">
+                        <h2>Tintes - Detalles</h2>
+                        <p>Descripción detallada de los tintes ofrecidos.</p>
+                        <button onclick="mostrar();">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <section>
+                <h3>Uñas</h3>
+                <h2>Acrilicas</h2>
+                <div class="wrapper">
+                    <div class="single-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2>Acrílicas</h2>
+                            <img src="https://i.pinimg.com/564x/69/8a/1e/698a1e464bcd7d927b98c36b6b2d17e5.jpg" height="250"
+                                width="220">
+                        </div>
+                        <div class="back">
+                            <div class="content">
+                                <h2>Uñas Acrílicas - Detalles</h2>
+                                <p>Transforma tus uñas con nuestro estilo vanguardista en uñas acrílicas. Descubre la perfecta fusión entre elegancia y modernidad.</p>
+                                <button onclick="mostrar();">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2>Diferentes tonos</h2>
+                            <img src="https://i.pinimg.com/564x/20/6c/79/206c795c1f4ef39900bd0e3c34b3b0ed.jpg" height="250"
+                                width="220">
+                        </div>
+                        <div class="back">
+                            <!-- Contenido adicional para la parte trasera de la tarjeta -->
+                            <div class="content">
+                                <h2>Uñas Acrílicas - Detalles</h2>
+                                <p>Sumérgete en un mundo de color con nuestras uñas acrílicas. Desde tonos audaces hasta delicados, ¡tú eliges el matiz que refleje tu personalidad!</p>
+                                <button onclick="mostrar();">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2>Personalizado</h2>
+                            <img src="https://i.pinimg.com/564x/e3/e8/6e/e3e86e6c97a247810f9494785183aaa2.jpg" height="250"
+                                width="220">
+                        </div>
+                        <div class="back">
+                            <!-- Contenido adicional para la parte trasera de la tarjeta -->
+                            <div class="content">
+                                <h2>Uñas Acrílicas - Detalles</h2>
+                                <p>Crea tu propio estilo con nuestras uñas acrílicas personalizadas. Desde detalles intrincados hasta patrones geométricos, cada diseño es único.</p>
+                                <button onclick="mostrar();">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2>Naturalidad</h2>
+                            <img src="https://i.pinimg.com/236x/16/a0/f6/16a0f62e9a1b00bdee59eb3fdb32c7bd.jpg" height="250"
+                                width="220">
+                        </div>
+                        <div class="back">
+                            <!-- Contenido adicional para la parte trasera de la tarjeta -->
+                            <div class="content">
+                                <h2>Uñas Acrílicas - Detalles</h2>
+                                <p>Atrévete con uñas acrílicas que parecen naturales. Logra un look impecable y duradero sin sacrificar la autenticidad</p>
+                                <button onclick="mostrar();">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2>Glamour</h2>
+                            <img src="https://i.pinimg.com/564x/01/0e/c3/010ec348eb60bea100515ac1c6cf76da.jpg" height="250"
+                                width="220">
+                        </div>
+                        <div class="back">
+                            <!-- Contenido adicional para la parte trasera de la tarjeta -->
+                            <div class="content">
+                                <h2>Uñas Acrílicas - Detalles</h2>
+                                <p>Deslumbra con uñas acrílicas que destacan. Añade un toque de glamour a tu día a día con nuestros acabados brillantes y resplandecientes.</p>
+                                <button onclick="mostrar();">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="wrapper">
+                    <div class="single-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2>Esculpidas</h2>
+                            <img src="https://i.pinimg.com/564x/6c/05/7a/6c057a2a5651aee6493a9503309de0e1.jpg" height="250"
+                                width="220">
+                        </div>
+                        <div class="back">
+                            <div class="content">
+                                <h2>Uñas Esculpidas - Detalles</h2>
+                                <p>Descubre la magia del arte tridimensional en tus uñas esculpidas. Dale vida a tus ideas con detalles asombrosos y texturas únicas.</p>
+                                <button onclick="mostrar();">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2>Clásicas</h2>
+                            <img src="https://i.pinimg.com/564x/93/0c/8b/930c8bf18470a7dd94355210a642db71.jpg" height="250"
+                                width="220">
+                        </div>
+                        <div class="back">
+                            <!-- Contenido adicional para la parte trasera de la tarjeta -->
+                            <div class="content">
+                                <h2>Uñas Esculpidas - Detalles</h2>
+                                <p>Sumérgete en la elegancia clásica con nuestras uñas esculpidas. Un toque atemporal que añadirá sofisticación a tu estilo.</p>
+                                <button onclick="mostrar();">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2>Minimalismo</h2>
+                            <img src="https://i.pinimg.com/564x/d8/9b/44/d89b449e4f9e118c66ad5942e68b45ba.jpg" height="250"
+                                width="220">
+                        </div>
+                        <div class="back">
+                            <!-- Contenido adicional para la parte trasera de la tarjeta -->
+                            <div class="content">
+                                <h2>Uñas Esculpidas - Detalles</h2>
+                                <p>Menos es más. Experimenta la belleza del minimalismo con nuestras uñas esculpidas. Un look sutil que habla por sí mismo.</p>
+                                <button onclick="mostrar();">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2>Floral</h2>
+                            <img src="https://i.pinimg.com/564x/4b/1d/28/4b1d286981b5d1f66d2e2b3b01570118.jpg" height="250"
+                                width="220">
+                        </div>
+                        <div class="back">
+                            <!-- Contenido adicional para la parte trasera de la tarjeta -->
+                            <div class="content">
+                                <h2>Uñas Esculpidas - Detalles</h2>
+                                <p>Celebra la feminidad con uñas esculpidas adornadas con delicados diseños florales. Un tributo a la belleza natural.</p>
+                                <button onclick="mostrar();">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <h2>Bohemio</h2>
+                            <img src="https://i.pinimg.com/564x/70/81/b1/7081b147c54fb215098fee0c4cf6761d.jpg" height="250"
+                                width="220">
+                        </div>
+                        <div class="back">
+                            <!-- Contenido adicional para la parte trasera de la tarjeta -->
+                            <div class="content">
+                                <h2>Uñas Esculpidas - Detalles</h2>
+                                <p>Embárcate en un viaje bohemio con nuestras uñas esculpidas. Detalles étnicos y colores cálidos para un estilo único.</p>
+                                <button onclick="mostrar();">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+        </section>
+        <script>
+            function mostrar(){
+                document.getElementById('tintesM').style.display = 'block'; 
+            }
+            function ocultar(){
+                document.getElementById('tintesM').style.display = 'none'; 
+            }
+        </script>
+    </main>
+    <footer>
+        <section>
+            <h2>Siguenos en Redes Sociales</h2>
+            <div class="imgg">
+            <a href="https://www.instagram.com/stephi.rivera/" target="_blank"><img src="../Tarea1/imagenes/insta.jpg"
+                    height="100" width="100"><h4>INSTAGRAM</h4></a>
+                <a href="https://www.facebook.com/stefyyyyyyyyiiii" target="_blank"><img
+                        src="../Tarea1/imagenes/face.jpg" height="100" width="100"><h4>FACEBOOK</h4></a>
+            </div>
+            <br>
+            <div class="piePagina"><i class="fa-solid fa-copyright" style="color:black;"></i>Copy Right</div>
+        </section>
+    </footer>
+</body>
+</html>

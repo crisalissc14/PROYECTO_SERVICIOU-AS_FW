@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Tarea1/imagenes/favicon.jpg" type="image/x-icon">
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"/>
+    <style>
+        .itemCarrusel {
+            border: 1px solid pink;
+            height: 200px;
+            position: relative;
+        }
+
+        #conteItemsCarrusel {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .tarjetaCarrusel {
+            background-color: palevioletred;
+            height: 100%;
+        }
+
+        .flechasCarrusel {
+            height: 100%;
+            width: 99%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        #tarjetaCarrusel-1 {
+            text-align: center;
+            background-color: #fff;
+        }
+
+        #tarjetaCarrusel-2 {
+            text-align: center;
+            background-color: rgb(233, 193, 207);
+        }
+
+        #tarjetaCarrusel-3 {
+            text-align: center;
+            background-color: #fff;
+        }
+
+        #contePuntos {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+
+        #cortePuntos>a {
+            font-size: 1.5em;
+            font-style: none;
+            color: black;
+            margin: 0 5px;
+        }
+
+        .ofertas {
+            margin: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+        }
+
+        .cards {
+            display: flex;
+            width: 130%;
+            padding: 50px;
+        }
+
+        .card {
+            background: rgb(233, 193, 207);
+            background: linear-gradient(90deg,
+                    rgb(233, 193, 207) 1%,
+                    rgb(240, 166, 193)100%);
+            color: white;
+            width: 260px;
+            height: 350px;
+            border-radius: 10px;
+            padding: 30px;
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
+                -5px 0 10px rgba(0, 0, 0, 0.1);
+
+            transition: all 0.3s ease;
+        }
+
+        .card a:hover {
+            color: lightyellow;
+        }
+
+        .card:hover {
+            margin-right: 80px;
+            transform: rotate(3deg) translateY(-15px);
+        }
+        .material-icons {
+            font-family: "Material Icons";
+            font-size: 48px; /* Preferred icon size */
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+          
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+          
+            /* Support for IE. */
+            font-feature-settings: "liga";
+          }
+          
+          .notification {
+            width: 48px;
+            margin-top: -70px;
+            margin-left: 130px;
+            animation: ring 4s 0.7s ease-in-out infinite;
+            transform-origin: 50% 4px;
+          }
+          .notification .count {
+            --size: 30px;
+          
+            font-size: 12px;
+            font-weight: bold;
+            background-color: red;
+            border: solid 2px white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: var(--size);
+            height: var(--size);
+            max-width: var(--size);
+            max-height: var(--size);
+            box-sizing: border-box;
+            border-radius: 50%;
+            color: white;
+            position: relative;
+            top: 20px;
+            left: -5px;
+          }
+          
+          @keyframes ring {
+            0% {
+              transform: rotate(0);
+            }
+            1% {
+              transform: rotate(30deg);
+            }
+            3% {
+              transform: rotate(-28deg);
+            }
+            5% {
+              transform: rotate(34deg);
+            }
+            7% {
+              transform: rotate(-32deg);
+            }
+            9% {
+              transform: rotate(30deg);
+            }
+            11% {
+              transform: rotate(-28deg);
+            }
+            13% {
+              transform: rotate(26deg);
+            }
+            15% {
+              transform: rotate(-24deg);
+            }
+            17% {
+              transform: rotate(22deg);
+            }
+            19% {
+              transform: rotate(-20deg);
+            }
+            21% {
+              transform: rotate(18deg);
+            }
+            23% {
+              transform: rotate(-16deg);
+            }
+            25% {
+              transform: rotate(14deg);
+            }
+            27% {
+              transform: rotate(-12deg);
+            }
+            29% {
+              transform: rotate(10deg);
+            }
+            31% {
+              transform: rotate(-8deg);
+            }
+            33% {
+              transform: rotate(6deg);
+            }
+            35% {
+              transform: rotate(-4deg);
+            }
+            37% {
+              transform: rotate(2deg);
+            }
+            39% {
+              transform: rotate(-1deg);
+            }
+            41% {
+              transform: rotate(1deg);
+            }
+          
+            43% {
+              transform: rotate(0);
+            }
+            100% {
+              transform: rotate(0);
+            }
+          }
+          
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+                <div class="esquina-superior-derecha">
+                    <button class="boton boton-logout" onclick="cerrarSesion()">
+                        <i class="fas fa-sign-out-alt" style="color: pink;"></i> CERRAR SESION
+                    </button>
+                </div>
+            <h1 class="h11"><button class="boton1"><a href="./index.html"><i class="fa-solid fa-house"
+                            style="color: palevioletred;"></i> INICIO </a></button>MAGIC BEAUTY <button
+                    class="boton2"><a href="./servicios.html"><i class="fa-solid fa-list"
+                            style="color: palevioletred"></i> PRODUCTOS</a></button></h1>
+            <h2 class="h22">Bienvenida al lugar de tus sueños</h2>
+            <div class="icon">
+                <img src="../Tarea1/imagenes/favicon.jpg" width="100" height="100">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./acercaDe.html"><i class="fa-solid fa-circle-info"
+                                style="color:  palevioletred;"></i>ACERCA DE</a></li>
+                    <li><a href="./servicios.html"><i class="fa-solid fa-heart"
+                                style="color:  palevioletred;"></i>SERVICIOS</a></li>
+                    <li><a href="./sucursal.html"><i class="fa-solid fa-location-dot"
+                                style="color: palevioletred;"></i>SUCURSAL</a></li>
+                    <li><a href="./contacto.html"><i class="fa-solid fa-phone"
+                                style="color:  palevioletred"></i>CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <section>
+            <h2 style=" text-align: center;">Aqui podras ver algunos de nuestros servicios</h2>
+            <div id="conteItemsCarrusel">
+                <div class="itemCarrusel" id="itemCarrusel-1">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+                        <img src="../Tarea1/imagenes/uñasssss.png" alt="Cortes">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-3">
+                            <img src="../Tarea1/imagenes/izquierda.png" height="50" width="50">
+                        </a>
+                        <a href="#itemCarrusel-2">
+                            <img src="../Tarea1/imagenes/derecha.png" height="50" width="50">
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrusel" id="itemCarrusel-2">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+                        <img src="../Tarea1/imagenes/cortesss.png" alt="Uñas">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-1">
+                            <img src="../Tarea1/imagenes/izquierda.png" height="50" width="50">
+                        </a>
+                        <a href="#itemCarrusel-3">
+                            <img src="../Tarea1/imagenes/derecha.png" height="50" width="50">
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrusel" id="itemCarrusel-3">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+                        <img src="../Tarea1/imagenes/peinadosss.png" alt="Peinados">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-2">
+                            <img src="../Tarea1/imagenes/izquierda.png" height="50" width="50">
+                        </a>
+                        <a href="#itemCarrusel-1">
+                            <img src="../Tarea1/imagenes/derecha.png" height="50" width="50">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="contePuntos">
+                <a href="#itemCarrusel-1">°</a>
+                <a href="#itemCarrusel-2">°</a>
+                <a href="#itemCarrusel-3">°</a>
+            </div>
+            <section>
+                <h2>OFERTAS <div class="notification">
+                    <div class="count">3</div>
+                    <span class="material-icons">notifications</span>
+                  </div></h2>
+                <blockquote>
+                    <p>Magic Beauty te ofrece una variedad de ofertas en todos sus servicios, no te quedes fuera!!!
+                    <ul>
+                        <li>Descuento en uñas acrilicas de un <b>10%!</b><img src="./imagenes/10.png" height="50"
+                                width="50"></li>
+                        <li>Descuento en peinados de un <b>20%!</b><img src="./imagenes/20.png" height="50" width="50">
+                        </li>
+                        <li>Descuento en cortes de un <b>30%!</b><img src="./imagenes/30.png" height="50" width="50">
+                        </li>
+                    </ul>
+                    </p>
+                </blockquote>
+                <section>
+                    <h3>En uñas, peinados y cortes</h3>
+                    <div class="cards">
+                        <div class="card">
+                            <a href="./servicios.html"><img src="../Tarea1/imagenes/uñas.jpg" height="300"
+                                    width="200"></a>
+                        </div>
+                        <div class="card element-1">
+                            <a href="./servicios.html"><img src="../Tarea1/imagenes/uñas2.jpg" height="300"
+                                    width="200"></a>
+                        </div>
+                        <div class="card element-2">
+                            <a href="./servicios.html"><img src="../Tarea1/imagenes/peinado1.jpg" height="300"
+                                    width="200"></a>
+                        </div>
+                        <div class="card element-3">
+                            <a href="./servicios.html"><img src="../Tarea1/imagenes/peinado2.jpg" height="300"
+                                    width="200"></a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h2>Siguenos en Redes Sociales</h2>
+            <div class="imgg">
+                <a href="https://www.instagram.com/stephi.rivera/" target="_blank"><img
+                        src="../Tarea1/imagenes/insta.jpg" height="100" width="100">
+                    <h4>INSTAGRAM</h4>
+                </a>
+                <a href="https://www.facebook.com/stefyyyyyyyyiiii" target="_blank"><img
+                        src="../Tarea1/imagenes/face.jpg" height="100" width="100">
+                    <h4>FACEBOOK</h4>
+                </a>
+            </div>
+            <br>
+            <div class="piePagina"><i class="fa-solid fa-copyright" style="color:black;"></i>Copy Right</div>
+        </section>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-workers.js')
+                .then(registration => {
+                    console.log('Service Worker registrado con éxito:', registration);
+                })
+                .catch(error => {
+                    console.log('Error al registrar el Service Worker:', error);
+                });
+        }
+        function cerrarSesion() {
+            var confirmacion = confirm("¿Seguro de cerrar sesión?");
+
+            if (confirmacion) {
+                window.location.href = 'login.html';
+            } else {
+
+            }
+        }
+    </script>
+</body>
+
+</html>

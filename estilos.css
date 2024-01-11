@@ -1,0 +1,322 @@
+header {
+  text-align: center;
+  font-family: "Satisfy", cursive;
+}
+
+section {
+  max-width: 1200px;
+  margin: 5px auto;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: url(./fondo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.h11 {
+  color: palevioletred;
+  font-size: 50px;
+  margin: 0;
+}
+
+.h22 {
+  color: palevioletred;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+  color: white;
+  padding: 2px;
+  font-family: "Times New Roman", Times, serif;
+}
+/* Para poner los items alineados en el centro */
+nav li {
+  display: inline-block; /*Bloques pequeños uno a lado de otro*/
+  margin-right: 50px;
+  padding: 20px; /*tamaño*/
+  border: 1px solid #000000; /*Poner borde al boton*/
+  /*background: linear-gradient(to right, #eebcd5, #ffffff);*/
+  background: #fff;
+  border-radius: 10px;
+}
+nav a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: black; /* color de letras negro */
+}
+
+.imgg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a:hover {
+  background-color: #d69999; /* Cambia el color */
+}
+.boton1 {
+  padding: 10px;
+  background-color: pink;
+  color: black;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left; /*Poner el boton al lado derecho*/
+  font-family: "Times New Roman", Times, serif;
+}
+.boton2 {
+  padding: 10px;
+  background-color: pink;
+  color: black; /*Color del texto*/
+  border: 1px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right; /*Poner el boton al lado izquierdo*/
+  font-family: "Times New Roman", Times, serif;
+}
+.boton1 a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: black; /* color de letras negro */
+}
+
+.boton2 a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: black; /* color de letras negro */
+}
+.boton1 a:hover {
+  background-color: #d69999; /* Cambia el color */
+}
+.boton2 a:hover {
+  background-color: #d69999; /* Cambia el color */
+}
+.piePagina {
+  text-align: center;
+  font-size: 20px;
+}
+.esquina-superior-derecha {
+  position: absolute;
+  margin-top: 10px;
+  right: 260px;
+}
+
+.boton-logout {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.boton-logout i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+#tintesM {
+  display: none; /*Ocultar*/
+  font-family: "Times New Roman", Times, serif;
+}
+#tintesM {
+  display: none; /*Ocultar*/
+  font-family: "Times New Roman", Times, serif;
+}
+h3 {
+  text-align: center;
+  background: linear-gradient(to Right, #ffb6c1, #ffffff);
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Ingresando diseño buscador */
+#inputSearch {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+/* Seccion sucursales */
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.search-container button {
+  padding: 10px;
+  background-color: palevioletred;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para las tarjetas de volteo */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.single-card {
+  width: calc(
+    20% - 20px
+  ); /* Ancho ajustado para mostrar 5 tarjetas en una fila */
+  height: 300px;
+  margin: 10px;
+  perspective: 1000px;
+  text-align: center;
+}
+
+.single-card:hover .front {
+  transform: rotateY(180deg);
+}
+
+.single-card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.single-card div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido en la parte superior */
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  overflow: hidden; /* Evita que la imagen sobresalga de la tarjeta */
+  transition: transform 0.5s ease-in-out;
+}
+
+.front {
+  cursor: pointer;
+  height: 50%; /* Ajusta la altura de la imagen en la parte frontal */
+  background-size: cover;
+  background-position: center top; /* Alinea la imagen en la parte superior */
+  border-radius: 50px; /* Borde redondeado solo arriba */
+}
+
+.content {
+  padding: 15px; /* Espaciado interno ajustado */
+  box-sizing: border-box; /* Box-sizing para incluir el padding en el tamaño total */
+}
+
+.content h2 {
+  font-size: 25px; /* Tamaño de la fuente reducido */
+  margin: 0;
+  font-weight: 300;
+}
+
+.single-card .front,
+.single-card .back {
+  cursor: pointer;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.single-card .back {
+  transform: rotateY(180deg);
+  position: absolute;
+  border-radius: 50px;
+  height: 300px;
+  background: #f0f0f0;
+}
+h4 {
+    text-align: center;
+    color: #333;
+}
+
+.ubicacion4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.progressbar-container {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.progressbar-container .outer-box {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: fadeIn 1s ease-out;
+}
+
+.progressbar-container .inner-box {
+    background-color: white;
+    font-size: 24px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progressbar-container svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progressbar-container circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: loading 8s linear forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes loading {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
