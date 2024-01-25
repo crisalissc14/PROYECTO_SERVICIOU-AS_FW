@@ -320,3 +320,429 @@ h4 {
         stroke-dashoffset: 0;
     }
 }
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+.weather-container {
+  color: rgb(15, 15, 15);
+  font-size: 14px; /* Ajusta el tamaño de fuente según tu preferencia */
+  width: 300px; /* Ajusta el ancho según tu preferencia */
+  background-color: #f3cdf3;
+  padding: 10px;
+  border-radius: 20px; /* Ajusta el radio de borde según tu preferencia */
+  position: relative;
+  margin-right: 10px; /* Espaciado entre el widget y las imágenes */
+}
+
+.weather-container .current .city {
+  font-size: 20px; /* Ajusta el tamaño de fuente de la ciudad */
+}
+
+.weather-container .current .day {
+  font-size: 16px; /* Ajusta el tamaño de fuente del día */
+}
+
+.weather-container .current .row .info .temperature .temperature-now {
+  font-size: 36px; /* Ajusta el tamaño de fuente de la temperatura actual */
+}
+
+.weather-container .list .day {
+  font-size: 14px; /* Ajusta el tamaño de fuente de los días */
+}
+.weather-container .current .row .info .temperature .temperature-now {
+  font-size: 40px; /* Reducción del tamaño de la temperatura actual */
+}
+
+.weather-container .current {
+  background: rgb(30, 183, 221);
+  background: linear-gradient(
+    0deg,
+    rgb(98, 151, 165) 0%,
+    rgb(103, 127, 156) 42%,
+    rgba(3, 191, 255, 1) 100%
+  );
+  border-radius: 40px;
+  padding: 40px;
+  
+}
+.weather-container .current .city {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.weather-container .current .day {
+  text-align: center;
+}
+
+.weather-container .current .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-container .current .row .icon img {
+}
+.weather-container .current .row .info {
+}
+.weather-container .current .row .info .temperature {
+  font-size: 4px;
+  font-weight: bold;
+}
+.weather-container .current .row .info .temperature .temperature-now {
+  font-size: 80px;
+  margin: 0;
+}
+.weather-container .current .row .info .temperature .temperature-low {
+  margin-left: -15px;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.weather-container .current .row .info .status {
+  color: rgba(255, 255, 255, 0.7);
+}
+.weather-container .current .more {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+  text-align: center;
+}
+
+.weather-container .current .more .item {
+}
+.weather-container .current .more .item .icon span {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.weather-container .current .more .item .text {
+  font-weight: bold;
+}
+.weather-container .current .more .item .text .value {
+}
+.weather-container .current .more .item .text .type {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.weather-container .list {
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.weather-container .list .day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather-container .list .day .name {
+  width: 123.3px;
+  font-weight: bold;
+}
+.weather-container .list .day .weather {
+  width: 123px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.weather-container .list .day .weather .icon {
+}
+.weather-container .list .day .weather .status {
+}
+.weather-container .list .day .temperature {
+  width: 123px;
+  text-align: right;
+}
+.weather-container .list .day .temperature .temperature-high {
+}
+.weather-container .list .day .temperature .temperature-low {
+  color: rgba(255, 255, 255, 0.7);
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}
+
+.containerC {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+
+/* Estilos para las imágenes en la matriz de 2x2 */
+.image-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Espaciado entre las imágenes */
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+.profile-container {
+  margin: 110px auto;
+  width: 90px;
+}
+
+.profile-container .profile {
+  
+}
+
+.profile-container .profile img {
+  border-radius: 50%;
+  width:125px;
+}
+
+.profile-container .profile .info {
+  display: none;
+  position: absolute;
+  width: 340px;
+  min-height: 450px;
+  max-height: 346px;
+  background-color: #222;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  flex-direction:column;
+  z-index: 999;
+}
+.profile-container .profile:hover .info {
+  display: flex;
+  animation: show 0.3s ease;
+}
+.profile-container .profile a {
+  color: white;
+  text-decoration: none;
+}
+.profile-container .profile a:hover {
+  text-decoration: underline;
+}
+
+.profile-container .profile .info .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-container .profile .info .photo {
+}
+
+.profile-container .profile .info .photo img {
+}
+
+.profile-container .profile .action {
+}
+
+.profile-container .profile .action button {
+  min-width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.profile-container .profile .action button:hover {
+  background-color: #eee;
+}
+
+.profile-container .profile .user-info {
+  padding: 10px 0;
+}
+
+.profile-container .profile .user-info .name {
+  font-weight: bold;
+}
+
+.profile-container .profile .user-info .username {
+  color: #aaa;
+}
+
+.profile-container .profile .description {
+  padding: 10px 0 20px 0;
+  flex: 1;
+}
+.profile-container .profile .description a {
+  color: rgb(0, 140, 255);
+  text-decoration: none;
+}
+
+.profile-container .profile .followers-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.profile-container .profile .followers-container a {
+  color: #aaa;
+}
+
+.profile-container .profile .followers-container .number {
+  font-weight: bold;
+  color: white;
+}
+
+.profile-container .profile .other {
+  padding: 10px 0;
+}
+
+.profile-container .profile .other a {
+  color: #999;
+  display: flex;
+}
+
+.profile-container .profile .other a .photos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  margin-right: 30px;
+}
+.profile-container .profile .other a .photos img {
+  margin-right: -20px;
+  border: solid 4px black;
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+:root {
+  --size: 150px;
+}
+
+.stories-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 790px;
+  margin: 100px auto;
+}
+
+.stories-container .story .outer-border {
+  background-color: black;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  background: radial-gradient(
+      circle farthest-corner at 32% 106%,
+      rgb(255, 225, 125) 0%,
+      rgb(255, 205, 105) 10%,
+      rgb(250, 145, 55) 28%,
+      rgb(235, 65, 65) 42%,
+      transparent 82%
+    ),
+    linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+}
+.stories-container .story .border {
+  background-color: white;
+  width: calc(var(--size) - 10px);
+  height: calc(var(--size) - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.stories-container .story .border a {
+  display: block;
+  width: calc(var(--size) - 20px);
+  height: calc(var(--size) - 20px);
+  box-sizing: border-box;
+}
+.stories-container .story .border img {
+  border-radius: 50%;
+  width: calc(var(--size) - 20px);
+  height: calc(var(--size) - 20px);
+  box-sizing: border-box;
+}
+
+.stories-container .story .name {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+  width: var(--size);
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  background-color:#000000 ;
+  color: #d69999;
+  height: min-content;
+  padding: 15px;
+  min-height:0%;
+}
+
+
+
+.stories-container {
+  flex: 1;
+}
+
+
+
+
+
+
+
+
+

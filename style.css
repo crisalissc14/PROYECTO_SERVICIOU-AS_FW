@@ -102,11 +102,6 @@ body {
   background-color: black;
   color: white;
 }
-.form-container .login-container button.btn.google-provider {
-  background-color: white;
-  color: black;
-  border: solid 1px #ccc;
-}
 
 .form-container .login-container button.btn.facebook-provider {
   background-color: rgb(97, 142, 226);
@@ -124,14 +119,17 @@ body {
 }
 
 .form-container .login-container button.btn.facebook-provider:hover {
-  background-color: rgb(72, 126, 226);
+  background-color: rgb(19, 88, 217);
   color: white;
 }
 .form-container .login-container button.btn.twitter-provider:hover {
   background-color: rgb(7, 133, 172);
   color: white;
 }
-
+.form-container .login-container button.btn.google-provider:hover {
+  background-color: rgb(38, 137, 8);
+  color: white;
+}
 .form-container .login-container .options {
   display: flex;
   justify-content: space-between;
@@ -164,5 +162,73 @@ body {
 
   .form-container .welcome-screen-container {
     width: 0%;
+
   }
 }
+nav {
+  position: absolute;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  width: 52px;
+  background-color: #222;
+  overflow: hidden;
+  margin-right: 1200px;
+  transition: width 0.3s;
+}
+nav:hover {
+  width: 300px;
+}
+
+nav .bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+
+nav .user {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  height: 180px;
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+nav:hover .user {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+nav .user img {
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+nav .links {
+}
+
+nav .links a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 400px;
+  overflow: hidden;
+}
+nav .links a:hover {
+  background-color: rgb(31, 135, 205);
+  color: white;
+}
+
+nav .links a .icon {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

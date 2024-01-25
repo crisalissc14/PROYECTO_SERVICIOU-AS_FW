@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../Tarea1/imagenes/favicon.jpg" type="image/x-icon">
     <style>
+      
         #formularioM {
             display: none;
             /*Ocultar*/
@@ -88,6 +89,165 @@
             background-color: rgba(255, 182, 193, 0.5);
             font-family: 'Times New Roman', Times, serif;
         }
+        .comments-container {
+            width: 800px;
+            margin: 0 auto;
+          }
+          .comments-container > .comment {
+            margin-bottom: 10px;
+          }
+          .comment {
+            display: flex;
+            width: 100%;
+            color: white;
+          }
+          
+          .comment .line {
+            position: relative;
+            width: 10px;
+            height: 50%;
+            border-left: solid 1px black;
+            border-bottom: solid 1px black;
+            border-radius: 0 0 0 8px;
+          }
+          .comment .comment-wrapper .comment-content {
+            width: 100%;
+          }
+          .comment .comment-wrapper .replies {
+            padding-top: 10px;
+            position: relative;
+            padding-left: 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+          .comment .comment-wrapper .replies::before {
+            content: "";
+            position: absolute;
+            background-color: black;
+            width: 1px;
+            top: 0;
+            height: calc(100% - 53px);
+          }
+          .comment .comment-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .comment .comment-wrapper .content {
+            display: flex;
+            border: solid 1px black;
+            padding: 10px;
+            border-radius: 3px;
+            background-color: rgb(7, 6, 6);
+          }
+          
+          .comment .comment-wrapper .content img {
+            border-radius: 50%;
+            width: 50px;
+            padding-right: 10px;
+          }
+          
+          .comment .comment-wrapper .content .comment-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          }
+          
+          .comment .comment-wrapper .content .comment-info .header .username {
+            font-weight: bold;
+          }
+          .comment .comment-wrapper .content .comment-info .header .date {
+            color: #999;
+          }
+          
+          .comment .comment-wrapper .content .comment-info .actions {
+            display: flex;
+            gap: 5px;
+          }
+          
+          .comment .comment-wrapper .content .comment-info .actions button {
+            border: none;
+            background-color: transparent;
+            color: #558bff;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 3px;
+          }
+          .comment .comment-wrapper .content .comment-info .actions button:hover {
+            color: white;
+            background-color: #558bff;
+          }
+          .seccion2 {
+            max-width: 1200px;
+            margin: 5px auto;
+            padding: 5px;
+            background: linear-gradient(to Right, #ffb6c1, #ffffff);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          .personas-container {
+            margin: 10px auto;
+            width: 500px;
+            display: flex;
+            margin-left: 1.5px;
+          }
+          .personas-container .persona {
+            position: relative;
+            margin-right: -20px;
+            display: inline-flex;
+            flex-direction: column;
+          }
+          .personas-container .persona img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: solid 2px white;
+          
+            transition: transform 0.3s ease-in-out;
+          }
+          
+          .personas-container .persona .name {
+            position: absolute;
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+            display: none;
+            min-width: 100px;
+            width: 150px;
+            top: -55px;
+            left: calc(-50% - 30px);
+            padding: 10px 15px;
+          }
+          
+          .personas-container .persona .name .text {
+            display: inline-block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            width: 150px;
+            text-align: center;
+            box-sizing: border-box;
+          }
+          
+          .personas-container .persona .name::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            left: 40%;
+            bottom: -20px;
+            border-top: solid 10px black;
+            border-left: solid 10px transparent;
+            border-right: solid 10px transparent;
+            border-bottom: solid 10px transparent;
+          }
+          .personas-container .persona:hover .name {
+            display: inline-block;
+          }
+        
     </style>
 </head>
 
@@ -238,6 +398,297 @@
             </script>
         </main>
     </section>
+    <section class="seccion2">
+        <br>
+        <br>
+        <h2 style="text-align: center;">Dejanos tu comentario</h2>
+        <div class="personas-container">
+            <div class="persona">
+              <img src="./imagenes/chica1.jpg" alt="" />
+              <span class="name">
+                <span class="text"> Lucia Marriot</span>
+              </span>
+            </div>
+            <div class="persona">
+              <img src="./imagenes/chica2.jpg" alt="" />
+              <span class="name">
+                <span class="text"> Karen</span>
+              </span>
+            </div>
+            <div class="persona">
+              <img src="./imagenes/chica3.jpg" alt="" />
+              <span class="name">
+                <span class="text"> Amelia Sttofers</span>
+              </span>
+            </div>
+            <div class="persona">
+              <img src="./imagenes/chica4.jpg" alt="" />
+              <span class="name">
+                <span class="text"> Sandra</span>
+              </span>
+            </div>
+            <div class="persona">
+              <img src="./imagenes/chica5.jpg" alt="" />
+              <span class="name">
+                <span class="text"> Anahí</span>
+              </span>
+            </div>
+          </div>
+        <section class="information">
+          <div class="textouno">
+            <h2>CEO de nuestra Empresa</h2>
+          </div>
+          <div class="profile-container">
+            <div class="profile">
+              <img src="./imagenes/owner.png" alt="" />
+              <div class="info">
+                <div class="header">
+                  <div class="photo">
+                    <img src="./imagenes/owner.png" alt="" />
+                  </div>
+                  <div class="action">
+                    <button>Follow</button>
+                  </div>
+                </div>
+                <div class="user-info">
+                  <div class="name"><a href="#">Selene Delgadp</a></div>
+                  <div class="username">@sñritavalle</div>
+                </div>
+                <div class="description">
+                  Reina del Cantón Sangolquí o Valle de los Chillos, madre, hija, y diseñadora gráfica,
+                  buscando siempre la mejor manera del progreso.
+                </div>
+      
+                <div class="followers-container">
+                  <div class="following">
+                    <a href="#"> <span class="number">100k</span> Siguiendo </a>
+                  </div>
+                  <div class="followers">
+                    <a href="#"> <span class="number">100k</span> Siguiendo </a>
+                  </div>
+                </div>
+      
+                <div class="other">
+                  <a href="#">
+                    <div class="photos">
+                      <img src="profile1.jpeg" alt="" />
+                      <img src="profile1.jpeg" alt="" />
+                      <img src="profile1.jpeg" alt="" />
+                    </div>
+                    <div class="names">
+                      Elon Musk, Bill Gates y 80 más de las cuentas que sigues siguen
+                      a esta cuenta
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="textodos"><h1>Nuestros Clientes:</h1></div>
+          <div class="stories-container">
+            <div class="story">
+              <div class="outer-border">
+                <div class="border">
+                  <a href="#">
+                    <img src="./imagenes/chica4.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="name">Vaness2002</div>
+            </div>
+      
+            <div class="story">
+              <div class="outer-border">
+                <div class="border">
+                  <a href="#">
+                    <img src="./imagenes/chica3.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="name">Amelia.S</div>
+            </div>
+      
+            <div class="story">
+              <div class="outer-border">
+                <div class="border">
+                  <a href="#">
+                    <img src="./imagenes/chica2.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="name">Karen_Anahi</div>
+            </div>
+      
+    
+      
+            <div class="story">
+              <div class="outer-border">
+                <div class="border">
+                  <a href="#">
+                    <img src="./imagenes/chica1.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="name">Lucia_Marlot</div>
+            </div>
+          </div>
+        </section>
+        <div class="comments-container">
+            <div class="comment">
+              <div class="comment-wrapper">
+                <div class="content">
+                  <div class="user-photo">
+                    <img src="./imagenes/chica1.jpg" alt="" width="50" />
+                  </div>
+                  <div class="comment-info">
+                    <div class="header">
+                      <span class="username">@luciaMarriot</span>
+                      <span class="date">5hrs ago</span>
+                    </div>
+                    <div class="text">Me encanto la atencion, sin duda volvere pronto!</div>
+                    <div class="actions">
+                      <button>Like</button>
+                      <button>Reply</button>
+                      <button>Share</button>
+                      <button>Follow</button>
+                      <button>Report</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="replies">
+                  <div class="comment">
+                    <div class="line"></div>
+                    <div class="comment-wrapper">
+                      <div class="content">
+                        <div class="user-photo">
+                          <img src="./imagenes/chica2.jpg" alt="" width="50" />
+                        </div>
+                        <div class="comment-info">
+                          <div class="header">
+                            <span class="username">@karen2008</span>
+                            <span class="date">5hrs ago</span>
+                          </div>
+                          <div class="text">Aunque espere mucho, ame los resultados</div>
+                          <div class="actions">
+                            <button>Like</button>
+                            <button>Reply</button>
+                            <button>Share</button>
+                            <button>Follow</button>
+                            <button>Report</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="comment">
+                    <div class="line"></div>
+                    <div class="comment-wrapper">
+                      <div class="content">
+                        <div class="user-photo">
+                          <img src="./imagenes/chica3.jpg" alt="" width="50" />
+                        </div>
+                        <div class="comment-info">
+                          <div class="header">
+                            <span class="username">@ameliaSttofers</span>
+                            <span class="date">5hrs ago</span>
+                          </div>
+                          <div class="text">X2 es mi Salón fav</div>
+                          <div class="actions">
+                            <button>Like</button>
+                            <button>Reply</button>
+                            <button>Share</button>
+                            <button>Follow</button>
+                            <button>Report</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="comment">
+              <div class="comment-wrapper">
+                <div class="content">
+                  <div class="user-photo">
+                    <img src="./imagenes/chica2.jpg" alt="" width="50" />
+                  </div>
+                  <div class="comment-info">
+                    <div class="header">
+                      <span class="username">@karen2008</span>
+                      <span class="date">5hrs ago</span>
+                    </div>
+                    <div class="text">Saben si atienden en feriado??</div>
+                    <div class="actions">
+                      <button>Like</button>
+                      <button>Reply</button>
+                      <button>Share</button>
+                      <button>Follow</button>
+                      <button>Report</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="replies">
+                  <div class="comment">
+                    <div class="line"></div>
+                    <div class="comment-wrapper">
+                      <div class="content">
+                        <div class="user-photo">
+                          <img src="./imagenes/chica3.jpg" alt="" width="50" />
+                        </div>
+                        <div class="comment-info">
+                          <div class="header">
+                            <span class="username">@ameliaSttofers</span>
+                            <span class="date">5hrs ago</span>
+                          </div>
+                          <div class="text">La anterior vez fui y si me atendieron</div>
+                          <div class="actions">
+                            <button>Like</button>
+                            <button>Reply</button>
+                            <button>Share</button>
+                            <button>Follow</button>
+                            <button>Report</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="comment">
+                    <div class="line"></div>
+                    <div class="comment-wrapper">
+                      <div class="content">
+                        <div class="user-photo">
+                          <img src="./imagenes/chica3.jpg" alt="" width="50" />
+                        </div>
+                        <div class="comment-info">
+                          <div class="header">
+                            <span class="username">@ameliaSttofers</span>
+                            <span class="date">5hrs ago</span>
+                          </div>
+                          <div class="text">Pero no se si este feriado sea igual</div>
+                          <div class="actions">
+                            <button>Like</button>
+                            <button>Reply</button>
+                            <button>Share</button>
+                            <button>Follow</button>
+                            <button>Report</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+    </section>
+    
+
     <footer>
         <section>
             <h2>Siguenos en Redes Sociales</h2>

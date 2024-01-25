@@ -4,6 +4,9 @@
 <head>
     <link rel="stylesheet" type="text/css" href="estilos.css" />
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sucursal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -11,8 +14,322 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../Tarea1/imagenes/favicon.jpg" type="image/x-icon">
-    
+
     <style>
+        
+
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+.message {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-confirm {
+  background-color: palevioletred;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: #fff;
+  color: palevioletred;
+  border: 1px solid palevioletred;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+        
+        .upload-container {
+  margin: 100px auto;
+  width: 500px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+.upload-container > .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.upload-container .description {
+}
+
+.upload-container .drag-drop {
+  border: dashed 3px #ccc;
+  border-radius: 5px;
+  box-sizing: inherit;
+  padding: 60px 30px;
+  margin: 20px 0;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #999;
+  gap: 10px;
+}
+
+.upload-container .drag-drop .icon svg {
+  width: 100px;
+  height: 100px;
+  fill: rgba(77, 134, 240, 0.5);
+}
+
+.upload-container .drag-drop .btn {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4d86f0;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  min-width: 200px;
+  cursor: pointer;
+}
+.upload-container .drag-drop .btn:hover {
+  background-color: #3c6dc0;
+}
+
+.upload-container .uploaded-files {
+}
+
+.upload-container .title-section {
+  text-align: left;
+  color: #555;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+.upload-container .uploaded-files {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.upload-container .uploaded-files .file {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.upload-container .uploaded-files .file:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.upload-container .uploaded-files .file .icon {
+  width: 48px;
+  padding: 0 10px;
+}
+.upload-container .uploaded-files .file .icon img {
+  width: 48px;
+  height: 48px;
+}
+.upload-container .uploaded-files .file .title {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.upload-container .uploaded-files .file .title .name {
+  display: block;
+  padding: 5px 0;
+}
+.upload-container .uploaded-files .file .title .size {
+  font-size: 14px;
+  color: #999;
+}
+.upload-container .uploaded-files .file .title .progress {
+  height: 5px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 10px 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.upload-container .uploaded-files .file .title .progress .progress-60 {
+  background-color: #4d86f0;
+  height: 5px;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.upload-container .uploaded-files .file .actions button {
+  padding: 10px;
+  margin: 0 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.upload-container .uploaded-files .file .actions button:hover {
+  background-color: #ddd;
+}
+
+        
+        .upload-container {
+            margin: 100px auto;
+            width: 500px;
+            text-align: center;
+            background-color: white;
+            border-radius: 5px;
+            padding: 50px 30px;
+            box-sizing: border-box;
+        }
+
+        .upload-container>.title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .upload-container .drag-drop {
+            border: dashed 3px #ccc;
+            border-radius: 5px;
+            box-sizing: inherit;
+            padding: 60px 30px;
+            margin: 20px 0;
+            line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            color: #999;
+            gap: 10px;
+        }
+
+        .upload-container .drag-drop .icon svg {
+            width: 100px;
+            height: 100px;
+            fill: rgba(77, 134, 240, 0.5);
+        }
+
+        .upload-container .drag-drop .btn {
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #4d86f0;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            min-width: 200px;
+            cursor: pointer;
+        }
+
+        .upload-container .drag-drop .btn:hover {
+            background-color: #3c6dc0;
+        }
+
+
+        .upload-container .title-section {
+            text-align: left;
+            color: #555;
+            font-weight: bolder;
+            padding-bottom: 20px;
+        }
+
+        .upload-container .uploaded-files {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .upload-container .uploaded-files .file {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .upload-container .uploaded-files .file:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .upload-container .uploaded-files .file .icon {
+            width: 48px;
+            padding: 0 10px;
+        }
+
+        .upload-container .uploaded-files .file .icon img {
+            width: 48px;
+            height: 48px;
+        }
+
+        .upload-container .uploaded-files .file .title {
+            flex: 1;
+            padding: 10px 0;
+        }
+
+        .upload-container .uploaded-files .file .title .name {
+            display: block;
+            padding: 5px 0;
+        }
+
+        .upload-container .uploaded-files .file .title .size {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .upload-container .uploaded-files .file .title .progress {
+            height: 5px;
+            width: 100%;
+            background-color: #ccc;
+            margin: 10px 0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .upload-container .uploaded-files .file .title .progress .progress-60 {
+            background-color: #4d86f0;
+            height: 5px;
+            width: 60%;
+            border-radius: 4px;
+        }
+
+        .upload-container .uploaded-files .file .actions button {
+            padding: 10px;
+            margin: 0 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .upload-container .uploaded-files .file .actions button:hover {
+            background-color: #ddd;
+        }
+
         h3 {
             text-align: center;
             background: linear-gradient(to Right, #FFB6C1, #FFFFFF);
@@ -33,17 +350,19 @@
             height: 50vh;
             /* Puedes ajustar la altura según tus necesidades */
         }
-        .ubicacion2, 
-        .ubicacion3{
+
+        .ubicacion2,
+        .ubicacion3 {
             display: flex;
             justify-content: space-around;
-            align-items: center; 
+            align-items: center;
         }
-        .sucursalSur, 
-        .sucursalGye{
+
+        .sucursalSur,
+        .sucursalGye {
             display: flex;
             justify-content: space-around;
-            align-items: center; 
+            align-items: center;
         }
     </style>
 </head>
@@ -76,23 +395,24 @@
     <main>
         <section>
             <section>
-            <h4>¡PRÓXIMA SUCURSAL MUY PRONTO!</h4>
-            <h3>Cada día estamos trabajando por un mejor servicio cerca de tí. :) </h3>
-            <div class="progressbar-container">
-                <div class="outer-box">
-                    <div class="inner-box" id="progressValue">0%</div>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
-                        <defs>
-                            <linearGradient id="GradientColor">
-                                <stop offset="0%" stop-color="#fde0e0" />
-                                <stop offset="50%" stop-color="#f48fb1" />
-                                <stop offset="100%" stop-color="#e91e63" />
-                            </linearGradient>
-                        </defs>
-                        <circle cx="100" cy="100" r="80" stroke-linecap="round" />
-                    </svg>
-                </div>
+                <h4>¡PRÓXIMA SUCURSAL MUY PRONTO!</h4>
+                <h3>Cada día estamos trabajando por un mejor servicio cerca de tí. :) </h3>
+                <div class="progressbar-container">
+                    <div class="outer-box">
+                        <div class="inner-box" id="progressValue">0%</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#fde0e0" />
+                                    <stop offset="50%" stop-color="#f48fb1" />
+                                    <stop offset="100%" stop-color="#e91e63" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="100" r="80" stroke-linecap="round" />
+                        </svg>
+                    </div>
             </section>
+           
             <h3>Ubicación de la matriz <i class="fa-solid fa-location-dot" style="color: red;"></i></h3>
             <h4><i class="fa-solid fa-thumbtack" style="color: red;"></i> Jaime Roldos Aguilera, Quito 170203</h4>
             <div class="ubicacionM">
@@ -106,25 +426,105 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.8897829213583!2d-78.5230169183654!3d-0.2525355324350651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59900bf9c20e1%3A0x798e1c28123c880f!2sAv.%20Pedro%20Vicente%20Maldonado%2C%20Quito%20170111!5e0!3m2!1ses!2sec!4v1701024045577!5m2!1ses!2sec"
                     width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.8857885400403!2d-78.54269335115585!3d-0.2773454257030648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d598950a3e65e3%3A0xe4ba7a8af319a3b4!2sCusubamba%2C%20Quito%20170131!5e0!3m2!1ses!2sec!4v1701024351797!5m2!1ses!2sec"
                     width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="sucursalSur">
-                <h5><i class="fa-solid fa-thumbtack" style="color: red;"></i> Av. Pedro Vicente Maldonado, Quito 170111</h5>
+                <h5><i class="fa-solid fa-thumbtack" style="color: red;"></i> Av. Pedro Vicente Maldonado, Quito 170111
+                </h5>
                 <h5><i class="fa-solid fa-thumbtack" style="color: red;"></i> Cusubamba, Quito 170131</h5>
             </div>
             <h4>SUCURSALES EN GUAYAQUIL</h4>
             <div class="ubicacion3">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.1203978160283!2d-79.90295442542394!3d-2.107173437073454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d12b426265aef%3A0xe4e83409ff7c5ccd!2sTeodoro%20Alvarado%20Oleas%2C%20Guayaquil%20090112!5e0!3m2!1ses!2sec!4v1701025123672!5m2!1ses!2sec" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.1203978160283!2d-79.90295442542394!3d-2.107173437073454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d12b426265aef%3A0xe4e83409ff7c5ccd!2sTeodoro%20Alvarado%20Oleas%2C%20Guayaquil%20090112!5e0!3m2!1ses!2sec!4v1701025123672!5m2!1ses!2sec"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="sucursalGye">
-                <h5><i class="fa-solid fa-thumbtack" style="color: red;"></i> Teodoro Alvarado Oleas, Guayaquil 090112 (Frente al parque Samanes)</h5>
+                <h5><i class="fa-solid fa-thumbtack" style="color: red;"></i> Teodoro Alvarado Oleas, Guayaquil 090112
+                    (Frente al parque Samanes)</h5>
             </div>
         </section>
-        
+
+        <section>
+            <h3>Ideas de Sucursales? <i class="fa-solid fa-location-dot" style="color: red;"></i></h3>
+            <div class="upload-container">
+                <div class="title">Sube tus ideas aqui:</div>
+                <div class="description">
+                    Upload the files you want to share with your team
+                </div>
+                <div class="drag-drop">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                            fill="#000000">
+                            <path d="M0 0h24v24H0V0z" fill="none" />
+                            <path
+                                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3zM8 13h2.55v3h2.9v-3H16l-4-4z" />
+                        </svg>
+                    </div>
+                    <div>Arrastra tu archivo aqui <br />O</div>
+                    <button class="btn">Busca documentos </button>
+                </div>
+
+                <div class="title-section">Ideas subidas:</div>
+                <div class="uploaded-files">
+                    <div class="file">
+                        <div class="icon">
+                            <img src="imagenes/word icon.png" width="48" alt="" />
+                        </div>
+                        <div class="title">
+                            <span class="name">Idea de sucursal 1.pdf</span>
+                            <div class="progress">
+                                <div class="progress-60"></div>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <button>X</button>
+                        </div>
+                    </div>
+
+                    <div class="file">
+                        <div class="icon">
+                            <img src="imagenes/word icon.png" width="48" alt="" />
+                        </div>
+                        <div class="title">
+                            <span class="name">Idea de sucursal 2.pdf</span>
+                            <div class="size">60 Kb</div>
+                        </div>
+                        <div class="actions">
+                            <button>X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <center>
+        <section>
+            <div class="modal-container">
+                <div class="modal">
+                  <div class="content">
+                    <div class="icon">
+                      <img src="check-svgrepo-com.svg" width="48" alt="" />
+                    </div>
+                    <div class="message">
+                      <div class="title">
+                        <h4>Creación de sugerencia</h4>
+                      </div>
+                      <div class="text">Deseas confirmar los cambios?</div>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <button class="btn-confirm">Crear propuesta</button>
+                    <button class="btn-cancel">Cancelar</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </center>
     </main>
     <footer>
         <section>
@@ -145,7 +545,7 @@
     </footer>
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         const progressValue = document.getElementById('progressValue');
         let percent = 0;
 
