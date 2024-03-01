@@ -563,7 +563,7 @@
       <section>
         <div class="textW">
           <h2>Visítanos en nuestros locales! </h2>
-          <h4>Te estaremos esperando <3 </h4>
+          <h4>Te estaremos esperando en nuestras sucursales </h4>
         </div>
         <div class="containerC">
                 <!-- Agregar Widget -->
@@ -716,26 +716,7 @@
             <div class="piePagina"><i class="fa-solid fa-copyright" style="color:black;"></i>Copy Right</div>
         </section>
     </footer>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-workers.js')
-                .then(registration => {
-                    console.log('Service Worker registrado con éxito:', registration);
-                })
-                .catch(error => {
-                    console.log('Error al registrar el Service Worker:', error);
-                });
-        }
-        function cerrarSesion() {
-            var confirmacion = confirm("¿Seguro de cerrar sesión?");
-
-            if (confirmacion) {
-                window.location.href = 'login.html';
-            } else {
-
-            }
-        }
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
