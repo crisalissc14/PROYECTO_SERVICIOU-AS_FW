@@ -16,315 +16,53 @@
     <link rel="shortcut icon" href="./imagenes/favicon.jpg" type="image/x-icon">
 
     <style>
-        
-
-
-.modal {
-  background: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  width: 300px;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-}
-
-.icon {
-  margin-right: 10px;
-}
-
-.icon img {
-  max-width: 100%;
-  height: auto;
-}
-
-.message {
-  flex: 1;
-}
-
-.actions {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.btn-confirm {
-  background-color: palevioletred;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.btn-cancel {
-  background-color: #fff;
-  color: palevioletred;
-  border: 1px solid palevioletred;
-  padding: 10px 15px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-        
-        .upload-container {
-  margin: 100px auto;
-  width: 500px;
-  text-align: center;
-  background-color: white;
-  border-radius: 5px;
-  padding: 50px 30px;
-  box-sizing: border-box;
-}
-
-.upload-container > .title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.upload-container .description {
-}
-
-.upload-container .drag-drop {
-  border: dashed 3px #ccc;
-  border-radius: 5px;
-  box-sizing: inherit;
-  padding: 60px 30px;
-  margin: 20px 0;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  color: #999;
-  gap: 10px;
-}
-
-.upload-container .drag-drop .icon svg {
-  width: 100px;
-  height: 100px;
-  fill: rgba(77, 134, 240, 0.5);
-}
-
-.upload-container .drag-drop .btn {
-  padding: 15px;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #4d86f0;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  min-width: 200px;
-  cursor: pointer;
-}
-.upload-container .drag-drop .btn:hover {
-  background-color: #3c6dc0;
-}
-
-.upload-container .title-section {
-  text-align: left;
-  color: #555;
-  font-weight: bolder;
-  padding-bottom: 20px;
-}
-
-.upload-container .uploaded-files {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.upload-container .uploaded-files .file {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.3s ease;
-}
-.upload-container .uploaded-files .file:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.upload-container .uploaded-files .file .icon {
-  width: 48px;
-  padding: 0 10px;
-}
-.upload-container .uploaded-files .file .icon img {
-  width: 48px;
-  height: 48px;
-}
-.upload-container .uploaded-files .file .title {
-  flex: 1;
-  padding: 10px 0;
-}
-
-.upload-container .uploaded-files .file .title .name {
-  display: block;
-  padding: 5px 0;
-}
-.upload-container .uploaded-files .file .title .size {
-  font-size: 14px;
-  color: #999;
-}
-.upload-container .uploaded-files .file .title .progress {
-  height: 5px;
-  width: 100%;
-  background-color: #ccc;
-  margin: 10px 0;
-  border-radius: 4px;
-  overflow: hidden;
-}
-.upload-container .uploaded-files .file .title .progress .progress-60 {
-  background-color: #4d86f0;
-  height: 5px;
-  width: 60%;
-  border-radius: 4px;
-}
-
-.upload-container .uploaded-files .file .actions button {
-  padding: 10px;
-  margin: 0 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.upload-container .uploaded-files .file .actions button:hover {
-  background-color: #ddd;
-}
-
-        
-        .upload-container {
-            margin: 100px auto;
-            width: 500px;
-            text-align: center;
-            background-color: white;
+        .modal {
+            background: #fff;
+            padding: 20px;
             border-radius: 5px;
-            padding: 50px 30px;
-            box-sizing: border-box;
+            width: 300px;
         }
 
-        .upload-container>.title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .upload-container .drag-drop {
-            border: dashed 3px #ccc;
-            border-radius: 5px;
-            box-sizing: inherit;
-            padding: 60px 30px;
-            margin: 20px 0;
-            line-height: 1.5;
+        .content {
             display: flex;
-            flex-direction: column;
-            font-weight: bold;
-            color: #999;
-            gap: 10px;
+            align-items: center;
         }
 
-        .upload-container .drag-drop .icon svg {
-            width: 100px;
-            height: 100px;
-            fill: rgba(77, 134, 240, 0.5);
+        .icon {
+            margin-right: 10px;
         }
 
-        .upload-container .drag-drop .btn {
-            padding: 15px;
-            font-size: 16px;
-            font-weight: bold;
-            background-color: #4d86f0;
-            color: white;
-            border: none;
-            border-radius: 3px;
-            min-width: 200px;
-            cursor: pointer;
+        .icon img {
+            max-width: 100%;
+            height: auto;
         }
 
-        .upload-container .drag-drop .btn:hover {
-            background-color: #3c6dc0;
+        .message {
+            flex: 1;
         }
 
-
-        .upload-container .title-section {
-            text-align: left;
-            color: #555;
-            font-weight: bolder;
-            padding-bottom: 20px;
-        }
-
-        .upload-container .uploaded-files {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .upload-container .uploaded-files .file {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            text-align: left;
+        .actions {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s ease;
+            margin-top: 20px;
         }
 
-        .upload-container .uploaded-files .file:hover {
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .upload-container .uploaded-files .file .icon {
-            width: 48px;
-            padding: 0 10px;
-        }
-
-        .upload-container .uploaded-files .file .icon img {
-            width: 48px;
-            height: 48px;
-        }
-
-        .upload-container .uploaded-files .file .title {
-            flex: 1;
-            padding: 10px 0;
-        }
-
-        .upload-container .uploaded-files .file .title .name {
-            display: block;
-            padding: 5px 0;
-        }
-
-        .upload-container .uploaded-files .file .title .size {
-            font-size: 14px;
-            color: #999;
-        }
-
-        .upload-container .uploaded-files .file .title .progress {
-            height: 5px;
-            width: 100%;
-            background-color: #ccc;
-            margin: 10px 0;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .upload-container .uploaded-files .file .title .progress .progress-60 {
-            background-color: #4d86f0;
-            height: 5px;
-            width: 60%;
-            border-radius: 4px;
-        }
-
-        .upload-container .uploaded-files .file .actions button {
-            padding: 10px;
-            margin: 0 15px;
+        .btn-confirm {
+            background-color: palevioletred;
+            color: #fff;
             border: none;
-            border-radius: 5px;
+            padding: 10px 15px;
+            border-radius: 3px;
             cursor: pointer;
         }
 
-        .upload-container .uploaded-files .file .actions button:hover {
-            background-color: #ddd;
+        .btn-cancel {
+            background-color: #fff;
+            color: palevioletred;
+            border: 1px solid palevioletred;
+            padding: 10px 15px;
+            border-radius: 3px;
+            cursor: pointer;
         }
 
         h3 {
@@ -409,7 +147,7 @@
                         </svg>
                     </div>
             </section>
-           
+
             <h3>Ubicación de la matriz <i class="fa-solid fa-location-dot" style="color: red;"></i></h3>
             <h4><i class="fa-solid fa-thumbtack" style="color: red;"></i> Jaime Roldos Aguilera, Quito 170203</h4>
             <div class="ubicacionM">
@@ -446,93 +184,40 @@
                     (Frente al parque Samanes)</h5>
             </div>
         </section>
-
-        <section>
-            <h3>Ideas de Sucursales? <i class="fa-solid fa-location-dot" style="color: red;"></i></h3>
-            <div class="upload-container">
-                <div class="title">Sube tus ideas aqui:</div>
-                <div class="description">
-                    Upload the files you want to share with your team
-                </div>
-                <div class="drag-drop">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                            fill="#000000">
-                            <path d="M0 0h24v24H0V0z" fill="none" />
-                            <path
-                                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3zM8 13h2.55v3h2.9v-3H16l-4-4z" />
-                        </svg>
-                    </div>
-                    <div>Arrastra tu archivo aqui <br />O</div>
-                    <button class="btn">Busca documentos </button>
-                </div>
-
-                <div class="title-section">Ideas subidas:</div>
-                <div class="uploaded-files">
-                    <div class="file">
-                        <div class="icon">
-                            <img src="imagenes/word icon.png" width="48" alt="" />
-                        </div>
-                        <div class="title">
-                            <span class="name">Idea de sucursal 1.pdf</span>
-                            <div class="progress">
-                                <div class="progress-60"></div>
+        <center>
+            <section>
+                <div class="modal-container">
+                    <div class="modal">
+                        <div class="content">
+                            <div class="icon">
+                                <img src="check-svgrepo-com.svg" width="48" alt="" />
+                            </div>
+                            <div class="message">
+                                <div class="title">
+                                    <h4>Creación de sugerencia</h4>
+                                </div>
+                                <div class="text">Deseas confirmar los cambios?</div>
                             </div>
                         </div>
                         <div class="actions">
-                            <button>X</button>
-                        </div>
-                    </div>
-
-                    <div class="file">
-                        <div class="icon">
-                            <img src="imagenes/word icon.png" width="48" alt="" />
-                        </div>
-                        <div class="title">
-                            <span class="name">Idea de sucursal 2.pdf</span>
-                            <div class="size">60 Kb</div>
-                        </div>
-                        <div class="actions">
-                            <button>X</button>
+                            <button class="btn-confirm">Crear propuesta</button>
+                            <button class="btn-cancel">Cancelar</button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    <center>
-        <section>
-            <div class="modal-container">
-                <div class="modal">
-                  <div class="content">
-                    <div class="icon">
-                      <img src="check-svgrepo-com.svg" width="48" alt="" />
-                    </div>
-                    <div class="message">
-                      <div class="title">
-                        <h4>Creación de sugerencia</h4>
-                      </div>
-                      <div class="text">Deseas confirmar los cambios?</div>
-                    </div>
-                  </div>
-                  <div class="actions">
-                    <button class="btn-confirm">Crear propuesta</button>
-                    <button class="btn-cancel">Cancelar</button>
-                  </div>
-                </div>
-              </div>
-        </section>
-    </center>
+            </section>
+        </center>
     </main>
     <footer>
         <section>
             <h2>Siguenos en Redes Sociales</h2>
             <div class="imgg">
-                <a href="https://www.instagram.com/stephi.rivera/" target="_blank"><img
-                        src="./imagenes/insta.jpg" height="100" width="100">
+                <a href="https://www.instagram.com/stephi.rivera/" target="_blank"><img src="./imagenes/insta.jpg"
+                        height="100" width="100">
                     <h4>INSTAGRAM</h4>
                 </a>
-                <a href="https://www.facebook.com/stefyyyyyyyyiiii" target="_blank"><img
-                        src="./imagenes/face.jpg" height="100" width="100">
+                <a href="https://www.facebook.com/stefyyyyyyyyiiii" target="_blank"><img src="./imagenes/face.jpg"
+                        height="100" width="100">
                     <h4>FACEBOOK</h4>
                 </a>
             </div>

@@ -19,6 +19,30 @@
       rel="stylesheet"
     />
     <style>
+      @media screen and (max-width: 600px) {
+        /* Estilos para pantallas pequeñas */
+        body {
+          font-size: 14px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        /* Ajustes de diseño para pantallas pequeñas */
+        .cards {
+          flex-wrap: wrap;
+        }
+        .card {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Media query para pantallas medianas */
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        /* Ajustes de diseño para pantallas medianas */
+        .cards {
+          justify-content: space-between;
+        }
+      }      
         .itemCarrusel {
             border: 1px solid pink;
             height: 200px;
