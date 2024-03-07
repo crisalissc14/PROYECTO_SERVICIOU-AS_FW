@@ -138,8 +138,9 @@
   <section>
     <main>
       <div class="formulario">
-        <h3>Agenda tu cita aquí <button id="botonmas" onclick="mostrar();"><i class="fa-solid fa-plus"
+        <h3>Formulario de citas <button id="botonmas" onclick="mostrar();"><i class="fa-solid fa-plus"
               style="color: palevioletred;"></i></button> </h3>
+        <form id="citaForm" action="basedatos.php" method="post" onsubmit="event.preventDefault(); enviarFormulario();">
         <div id="formularioM">
           <div>
             <label for="name"> Nombre: </label>
