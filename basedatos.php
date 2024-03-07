@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hora = isset($_POST["hora"]) ? $_POST["hora"] : "";
 
     // Configurar la conexión a la base de datos
-    $servername = "127.0.0.1";
+    $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "baseform";
