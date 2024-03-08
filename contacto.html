@@ -176,10 +176,10 @@
                             <input type="submit" value="Enviar">
                             <input type="reset" value="Cancelar">
                         </div>
+                        <button id="botonmenos" onclick="ocultar();">Ver menos <i class="fa-solid fa-minus"
+                            style="color: palevioletred;"></i></button>
                     </div>
                 </form>
-                <button id="botonmenos" onclick="ocultar();">Ver menos <i class="fa-solid fa-minus"
-                                style="color: palevioletred;"></i></button>
             </div>
         </main>
     </section>
@@ -201,28 +201,7 @@
             <div class="piePagina"><i class="fa-solid fa-copyright" style="color:black;"></i>Copy Right</div>
         </section>
     </footer>
-    <script>
-        function mostrar() {
-            document.getElementById("formularioM").style.display = "block";
-            document.getElementById("botonmas").style.display = "none";
-            document.getElementById("botonmenos").style.display = "block";
-        }
-
-        function ocultar() {
-            document.getElementById("formularioM").style.display = "none";
-            document.getElementById("botonmas").style.display = "block";
-            document.getElementById("botonmenos").style.display = "none";
-        }
-
-        function enviarFormulario() {
-            mostrarAlerta();
-            document.getElementById("citaForm").submit();
-        }
-
-        function mostrarAlerta() {
-            alert("Cita reservada");
-        }
-    </script>
+    <script src="./js/contacto.js"></script>
 </body>
 
 </html>

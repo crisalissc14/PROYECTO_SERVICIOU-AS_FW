@@ -56,4 +56,12 @@ function limpiarFormulario() {
         fechaMinima = año + '-' + mes + '-' + dia;
         fechaInput.setAttribute('min', fechaMinima);
     });
+    function enviarFormulario() {
+        mostrarAlerta();
+        document.getElementById("citaForm").submit();
+    }
+
+    function mostrarAlerta() {
+        alert("Cita reservada");
+    }
 
